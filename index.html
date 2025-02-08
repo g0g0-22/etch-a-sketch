@@ -8,13 +8,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <h1>Etch-a-Sketch</h1>
     <div id="container"></div>
 
     <div class="tools">
-        <button id="reset">Reset Canvas</button>
-
+        <div id="containerTools">
+            <button id="reset">Reset Canvas</button>
+            <button id="gridToggle">
+                <div class="gridIconBox"></div>
+                <div class="gridIconBox"></div>
+                <div class="gridIconBox"></div>
+                <div class="gridIconBox"></div>
+            </button>
+        </div>
         <div class="colorSelectors">
-            <div id="black"></div>
+            <div id="black" class="active"></div>
             <div id="gray"></div>
             <div id="red"></div>
             <div id="orange"></div>

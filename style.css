@@ -1,13 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    margin-top: 20px;
+}
 #container{
     width: 700px;
     height: 700px;
     border-color: black;
     border-style: solid;
     background-color: blueviolet;
+    cursor: crosshair;
+    display: flex;
+    flex-wrap: wrap;
+}
+#containerTools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+#reset{
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 30%);
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+#reset:active{
+    background-color: hsl(0, 0%, 80%);
+}
+
+#gridToggle{
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    width: 50px;
+    color: hsl(0, 0%, 30%);
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3px;
+    row-gap: 3px;
+    align-content: center;
+}
+#gridToggle:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+#gridToggle:active{
+    background-color: hsl(0, 0%, 80%);
+}
+#gridToggle div{
+width: 15px;
+height: 15px;
+background-color: hsl(0, 0%, 60%);
+border-radius: 3px;
+margin: 0;
+}
+#gridToggle div.active{
+background-color: white;
+box-sizing: border-box;
+border-radius: 3px;
+border: 2px solid;
+border-color: hsl(0, 0%, 60%);
+
 }
 
 .pixel{
@@ -17,17 +101,52 @@
     border-style: solid;
     background-color: white;
 }
+.pixel.no-grid{
+    box-sizing: border-box;
+    border-color: hsl(0, 0%, 100%);
+    border-width: 0px;
+    background-color: white;
+}
 .colorSelectors{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 .colorSelectors div{
-    width: 50px;
-    height: 50px;
-    background-color: tomato;
-    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.colorSelectors div.active{
+    border: 2px solid hsl(0, 0%, 30%);
+    width: 35px;
+    height: 35px;
+
 }
 
 .pixel.black{
     background-color: hsl(0, 0%, 10%);
+}
+.pixel.red{
+    background-color: red;
+}
+.pixel.green{
+    background-color: green;
+}
+.pixel.blue{
+    background-color: blue;
+}
+.pixel.yellow{
+    background-color: yellow;
+}
+.pixel.purple{
+    background-color: purple;
+}
+.pixel.orange{
+    background-color: orange;
+}
+.pixel.gray{
+    background-color: gray;
 }
