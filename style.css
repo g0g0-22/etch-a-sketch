@@ -2,7 +2,7 @@
 #container{
     width: 700px;
     height: 700px;
-    border-color: red;
+    border-color: black;
     border-style: solid;
     background-color: blueviolet;
 
@@ -12,13 +12,22 @@
 
 .pixel{
     box-sizing: border-box;
-    border-color: hsl(0, 0%, 50%);
+    border-color: hsl(0, 0%, 90%);
     border-width: 1px;
     border-style: solid;
     background-color: white;
 }
+.colorSelectors{
+    display: flex;
+    gap: 10px;
+}
+.colorSelectors div{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    border-radius: 50px;
+}
 
-
-.pixel.active{
+.pixel.black{
     background-color: hsl(0, 0%, 10%);
 }
