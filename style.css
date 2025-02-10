@@ -91,9 +91,53 @@ box-sizing: border-box;
 border-radius: 3px;
 border: 2px solid;
 border-color: hsl(0, 0%, 60%);
-
 }
 
+#eraser{
+    width: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#eraser:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+#eraser:active{
+    background-color: hsl(0, 0%, 80%);
+}
+.eraserIcon{
+    width: 15px;
+    height: 15px;
+    background-color: hsl(0, 0%, 30%);
+}
+#eraser.activeEraser{
+    background-color: hsl(0, 0%, 60%);
+}
+#eraser.activeEraser:hover{
+    background-color: hsl(0, 0%, 50%);
+}
+#eraser.activeEraser:active{
+    background-color: hsl(0, 0%, 40%);
+}
+#dark.eraserIcon{
+    background-color: hsl(0, 0%, 20%);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#light.eraserIcon{
+    background-color: hsl(0, 0%, 50%);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+#light.eraserIcon.activeEraserTopBox{
+    background-color: hsl(0, 0%, 80%);
+}
 .pixel{
     box-sizing: border-box;
     border-color: hsl(0, 0%, 90%);
@@ -110,7 +154,11 @@ border-color: hsl(0, 0%, 60%);
 .colorSelectors{
     display: flex;
     align-items: center;
+    height: 40px;
     gap: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
 .colorSelectors div{
     width: 30px;
