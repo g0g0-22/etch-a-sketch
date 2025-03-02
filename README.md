@@ -1,1 +1,1 @@
-Etch a Sketch project apropo The Odin Project curriculum.
+Etch a Sketch project apropos The Odin Project curriculum.
